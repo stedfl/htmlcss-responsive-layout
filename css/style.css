@@ -48,127 +48,161 @@ img {
   max-width: 100%;
 }
 
- header {
+header {
   height: 75px;
   background-color: #0084fd;
   color: #ffffff;
- }
+}
 
- header .icon.bars::before {
+header .icon.bars::before {
   content: "\f0c9";
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
- }
+}
 
- header .container {
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
- }
+}
 
- header .col img {
+header .col img {
   vertical-align: middle;
- }
+}
 
- header a {
+header a {
   color: #ffffff; 
- }
+}
 
- .demo .row {
+.demo .row {
   padding-bottom: 2rem;
- }
+}
 
- .demo .card {
+.demo .card {
   padding: 2rem 1.5rem 0;
   background-color: #b5ddff;
- }
+}
 
 
- .demo .row >.col:last-child .card {
+.demo .row >.col:last-child .card {
   margin-bottom: 0;
- }
+}
 
- .planning {
+.planning {
   padding: 4rem 0;
- }
+}
 
- .testimonials {
+.testimonials {
   text-align: center;
- }
+}
 
- .testimonials .description {
+.testimonials .description {
   padding: 1rem 0 2rem;
- }
+}
 
- .testimonials .description *, .testimonials .card {
+.testimonials .description *, .testimonials .card {
   margin-bottom: 2rem;
- }
+}
 
- .testimonials {
+.testimonials {
   margin-bottom: 2rem;
- }
+}
 
- .benefits h3 {
+.benefits h3 {
   text-align: center;
- }
+}
 
+.call {
+  text-align: center;
+  padding: 6rem;
+  
+}
 
- 
+footer {
+  background-color: #333333;
+  padding: 2.5rem 0;
+  text-align: center;
 
- 
-
+}
 
 
 /* MEDIA QUERY */
 @media screen and (min-width: 1141px) { 
-    .container {
-      width: 1140px;
-      margin: 0 auto;
-    }
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+  }
 
-    .benefits .row {
-      justify-content: space-between;
-    }
+  .benefits .row {
+    justify-content: space-between;
+  }
 
-    .benefits .row .col {
-      width: calc(100% / 3);
-    }
+  .benefits .row .col {
+    width: calc(100% / 3 - 20px);
+  }
 
+  footer .container {
+    width: 50%;
+  }
 
+  footer .container {
+    width: 30%;
+  }
 }
 
- @media screen and (min-width:769px) {
-    .container {
-      padding: 1rem;
-    }
 
-    .demo .row, .planning .row, .benefits .row {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
 
-   .demo .col {
-      width: calc(100% / 3);
-      padding: 0 1.5rem;
-    }
+@media screen and (min-width:769px) {
+  .demo .row, .planning .row, .benefits .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-   .demo .row >.col:first-child {
-      width: 66.6%;
-    }
+  .demo .row {
+    justify-content: space-between;
+  }
 
-    .planning .row {
-      padding: 0 8rem;
-    }
+  .demo .col {
+    width: calc(100% / 3 - 2rem);
+  }
 
-    .planning .col {
-      width: 50%;
-    }
+  .demo .row >.col:first-child {
+    width: calc(66.6% - 1rem);
+  }
 
-    .benefits .col {
-      width: calc(100% / 2);
-    }
+  .planning .row {
+    padding: 0 8rem;
+  }
 
+  .planning .col {
+    width: 50%;
+  }
+
+  .benefits .row {
+    justify-content: space-between;
+  }
+
+  .benefits .col {
+    width: calc(50% - 1rem);
+  }
+
+  .aboutus .row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .aboutus .left {
+    width: 55%;
+  }
+
+  .aboutus .right {
+    width: 35%;
+  }
+
+
+
+    
 
 
   }
