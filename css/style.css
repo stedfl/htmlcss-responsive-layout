@@ -68,7 +68,7 @@ a.button {
 }
 
 h2 {
-  font-size: ;
+  font-size: 4rem ;
 }
 
 h3 {
@@ -235,9 +235,17 @@ header .menu {
   border-radius: 50%;
 }
 
-
-.benefits h3 {
+.benefits h4 {
   text-align: center;
+}
+
+.benefits .card {
+  text-align: start;
+  border-radius: 20px;
+}
+
+.benefits .card p {
+  color: #5a6e7f;
 }
 
 .call {
