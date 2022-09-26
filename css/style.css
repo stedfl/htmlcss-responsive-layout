@@ -14,7 +14,7 @@ body {
  }
 
  .container {
-  padding: 0 30px;
+  padding: 0 2rem;
   height: 100%;
 }
 
@@ -68,15 +68,52 @@ img {
   color: #ffffff; 
  }
 
- .demo .row .card {
+ .demo .row {
+  padding-bottom: 2rem;
+ }
+
+ .demo .card {
   padding: 2rem 1.5rem 0;
   background-color: #b5ddff;
   margin-bottom: 1.5rem;
  }
 
+
+ .demo .row >.col:last-child .card {
+  margin-bottom: 0;
+ }
+
+ .planning {
+  padding: 4rem;
+ }
+
+ .planning .row {
+  padding: 0 8rem;
+ }
+
  .planning .row >.col:last-child .card {
   background-color: #ffffff;
  }
+
+ .testimonials {
+  text-align: center;
+ }
+
+ .testimonials .description {
+  padding: 1rem 0 2rem;
+ }
+
+ .testimonials .description *, .testimonials .card {
+  margin-bottom: 2rem;
+ }
+
+ .testimonials {
+  margin-bottom: 2rem;
+ }
+
+ 
+
+ 
 
 
 
@@ -89,12 +126,12 @@ img {
 }
 
  @media screen and (min-width:769px) {
-    .row {
+    .demo .row, .planning .row {
       flex-direction: row;
       flex-wrap: wrap;
     }
 
-   .row .col {
+   .demo .col {
       width: calc(100% / 3);
     }
 
