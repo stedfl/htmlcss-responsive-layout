@@ -30,10 +30,13 @@ body {
 .col {
   width: 100%;
   justify-content: center;
+  margin-bottom: 1.5rem;
  }
 
- .card {
-  margin-bottom: 1.5rem;
+.card {
+  
+  border-radius: 20px;
+  height: 100%;
  }
 
 a {
@@ -51,9 +54,32 @@ img {
 li {
   list-style: none;
 }
-.button a {
+
+.icon {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+a.button {
   border-radius: 20px;
 }
+
+h2 {
+  font-size: ;
+}
+
+h3 {
+  font-size: ;
+}
+
+h4 {
+  font-size: ;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
 
 header {
   height: 75px;
@@ -63,8 +89,6 @@ header {
 
 header .icon.bars::before {
   content: "\f0c9";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
 }
 
 header .container {
@@ -90,14 +114,55 @@ header .menu {
   padding-bottom: 2rem;
 }
 
+.demo .row >.col:last-child .card {
+  margin-bottom: 0;
+}
+
 .demo .card {
-  padding: 2rem 1.5rem 0;
+  padding: 2rem 1.5rem;
   background-color: #b5ddff;
+  text-align: center;
+}
+
+.demo .special {
+  padding-bottom: 0;
+}
+
+.demo .card i, .demo .card h5, .demo .card-left p {
+  margin-bottom: 1.8rem;
+}
+
+.demo a.button  {
+  background-color: #0084fd;
+  color: white;
+  font-weight: bold;
+  padding: 10px 60px;
 }
 
 
-.demo .row >.col:last-child .card {
-  margin-bottom: 0;
+.demo i {
+  font-size: 5rem;
+}
+
+.demo i, .demo h5 {
+  color: #0084fd;
+}
+
+
+.demo .icon.apple::before {
+  content:"\f179";
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 900;
+}
+
+.demo .card-left {
+  text-align: start;
+}
+
+.demo p {
+  color: #5a6e7f;
+  font-weight: bold;
+  line-height: 2rem;
 }
 
 .planning {
@@ -127,7 +192,6 @@ header .menu {
 .call {
   text-align: center;
   padding: 6rem;
-  
 }
 
 footer {
@@ -162,9 +226,34 @@ footer {
     margin-left: 2rem;
   }
 
-  header .button a {
+  header a.button {
     color: black;
     padding: 8px 15px;
+  }
+
+  .demo .card.special {
+    display: flex;
+  }
+  
+  .demo .card-left {
+    width: 50%;
+  }
+
+  .demo .card-right {
+    width: 50%;
+    align-self: flex-end;
+  }
+  
+  .demo .card-right img {
+    width: 75%; 
+  }
+
+  .planning .row {
+    padding: 0 8rem;
+  }
+
+  .planning .col {
+    width: 50%;
   }
 
   .benefits .row {
@@ -185,7 +274,6 @@ footer {
 }
 
 
-
 @media screen and (min-width:769px) {
   .demo .row, .planning .row, .benefits .row {
     flex-direction: row;
@@ -197,19 +285,11 @@ footer {
   }
 
   .demo .col {
-    width: calc(100% / 3 - 2rem);
+    width: calc(100% / 3 - 0.8rem);
   }
 
   .demo .row >.col:first-child {
-    width: calc(66.6% - 1rem);
-  }
-
-  .planning .row {
-    padding: 0 8rem;
-  }
-
-  .planning .col {
-    width: 50%;
+    width: calc(66.6% - 0.8rem);
   }
 
   .benefits .row {
@@ -240,4 +320,4 @@ footer {
 
   }
 
-
+ 
