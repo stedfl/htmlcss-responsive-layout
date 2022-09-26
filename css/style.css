@@ -36,8 +36,9 @@ body {
  }
 
 .card {
-  border-radius: 20px;
+  border-radius: 50px;
   text-align: center;
+  padding: 2rem;
  }
 
 a {
@@ -128,6 +129,7 @@ header .menu {
   padding: 2rem 1.5rem;
   background-color: #b5ddff;
   height: 100%;
+  border-radius: 20px;
 }
 
 .demo .special {
@@ -189,7 +191,6 @@ header .menu {
   color: black;
   background-color: white;
   padding: 2rem;
-  border-radius: 50px;
 }
 
 .planning .card p {
@@ -218,6 +219,22 @@ header .menu {
 .testimonials .description *, .testimonials .card {
   margin-bottom: 2rem;
 }
+
+.testimonials .test, .testimonials .author  {
+  text-transform: uppercase;
+}
+
+.testimonials p {
+  font-size: 1.2rem;
+}
+
+.testimonials .top img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
 
 .benefits h3 {
   text-align: center;
@@ -328,6 +345,19 @@ footer {
 
   .planning h4 {
     font-size: 4rem;
+  }
+
+  .testimonials .card {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .top {
+    width: 200px;
+  }
+
+  .bottom {
+    width: calc(100% - 250px);
   }
 
   .benefits .row {
