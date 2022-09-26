@@ -16,7 +16,7 @@ body {
 
  .bg-white {
   background-color: white;
-  color: black;
+  color: #9792e4;
  }
 
  .container {
@@ -37,7 +37,6 @@ body {
 
 .card {
   border-radius: 20px;
-  height: 100%;
   text-align: center;
  }
 
@@ -128,6 +127,7 @@ header .menu {
 .demo .card {
   padding: 2rem 1.5rem;
   background-color: #b5ddff;
+  height: 100%;
 }
 
 .demo .special {
@@ -177,11 +177,26 @@ header .menu {
   color: white;
 }
 
-.planning .card.bg-white p {
+.planning .col.right {
+  align-self: flex-end;
+}
+
+.planning .col *:not(.card) {
+  margin-bottom: 2rem;
+}
+
+.planning .card {
+  color: black;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 50px;
+}
+
+.planning .card p {
   font-style: italic;
 }
 
-.planning a {
+.planning .card a {
   font-size: 1.5rem;
   color: black;
   width: 50px;
@@ -260,10 +275,11 @@ footer {
 
   .planning .row {
     padding: 0 8rem;
+    justify-content: space-between;
   }
 
   .planning .col {
-    width: 50%;
+    width: 45%;
   }
 
   .benefits .row {
@@ -308,6 +324,10 @@ footer {
 
   .demo .card-right img {
     width: 75%; 
+  }
+
+  .planning h4 {
+    font-size: 4rem;
   }
 
   .benefits .row {
