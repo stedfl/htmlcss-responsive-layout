@@ -11,10 +11,12 @@ body {
  
  .bg-violet {
   background-color: #9792e4;
+  color:white;
  }
 
  .bg-white {
-  background-color: #ffffff; ;
+  background-color: white;
+  color: black;
  }
 
  .container {
@@ -34,9 +36,9 @@ body {
  }
 
 .card {
-  
   border-radius: 20px;
   height: 100%;
+  text-align: center;
  }
 
 a {
@@ -49,6 +51,7 @@ section {
 
 img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 li {
@@ -73,11 +76,15 @@ h3 {
 }
 
 h4 {
-  font-size: ;
+  font-size: 2rem;
 }
 
 h5 {
   font-size: 1.2rem;
+}
+
+p {
+  line-height: 2rem;
 }
 
 
@@ -121,7 +128,6 @@ header .menu {
 .demo .card {
   padding: 2rem 1.5rem;
   background-color: #b5ddff;
-  text-align: center;
 }
 
 .demo .special {
@@ -143,7 +149,6 @@ header .menu {
   padding: 10px 60px;
 }
 
-
 .demo i {
   font-size: 5rem;
 }
@@ -151,7 +156,6 @@ header .menu {
 .demo i, .demo h5 {
   color: #0084fd;
 }
-
 
 .demo .icon.apple::before {
   content:"\f179";
@@ -166,15 +170,30 @@ header .menu {
 .demo p {
   color: #5a6e7f;
   font-weight: bold;
-  line-height: 2rem;
 }
 
 .planning {
   padding: 4rem 0;
+  color: white;
+}
+
+.planning .card.bg-white p {
+  font-style: italic;
+}
+
+.planning a {
+  font-size: 1.5rem;
+  color: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 50px;
 }
 
 .testimonials {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .testimonials .description {
@@ -182,10 +201,6 @@ header .menu {
 }
 
 .testimonials .description *, .testimonials .card {
-  margin-bottom: 2rem;
-}
-
-.testimonials {
   margin-bottom: 2rem;
 }
 
