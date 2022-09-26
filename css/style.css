@@ -48,6 +48,13 @@ img {
   max-width: 100%;
 }
 
+li {
+  list-style: none;
+}
+.button a {
+  border-radius: 20px;
+}
+
 header {
   height: 75px;
   background-color: #0084fd;
@@ -73,6 +80,10 @@ header .col img {
 
 header a {
   color: #ffffff; 
+}
+
+header .menu {
+  display: none;
 }
 
 .demo .row {
@@ -132,6 +143,28 @@ footer {
   .container {
     width: 1140px;
     margin: 0 auto;
+  }
+
+  header .more {
+    display: none;
+  }
+
+  header .menu {
+    display: block;
+  }
+
+  header .menu ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .menu li {
+    margin-left: 2rem;
+  }
+
+  header .button a {
+    color: black;
+    padding: 8px 15px;
   }
 
   .benefits .row {
