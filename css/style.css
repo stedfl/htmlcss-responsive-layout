@@ -8,16 +8,48 @@ body {
   background-color: #ffffff;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
- .d-flex {
-  display: flex;
- }
-
+ 
  .bg-violet {
   background-color: #9792e4;
  }
+
+ .container {
+  padding: 0 20px;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
 
  header {
   height: 75px;
   background-color: #0084fd;
   color: #ffffff;
  }
+
+ header .icon.bars::before {
+  content: "\f0c9";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+ }
+
+ header .row {
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+ }
+
+ header .col img {
+  vertical-align: middle;
+ }
+
+ header a {
+  color: #ffffff; 
+ }
+
+ 
